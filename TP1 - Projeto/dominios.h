@@ -24,3 +24,19 @@ inline Tipo Dominio::getValor() const{
 }
 
 ----------------------------------------------------------------------- */
+class Cidade {
+    private:
+        static const string cidades_validas[15] = {"Hong Kong", "Bangkok", "Macau", "Singapura", "Londres", "Paris", "Dubai", "Delhi",
+        "Istambul", "Kuala Lumpur", "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
+        const string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Cidade::getValor() const{
+    return valor;
+}
+
+class Codigo
