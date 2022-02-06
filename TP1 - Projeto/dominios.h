@@ -6,17 +6,17 @@
 using namespace std;
 
 /* -----------------------------------------------------------------------
-// Estrutura de código para declaração de classe domínio.
+// Estrutura de cÃ³digo para declaraÃ§Ã£o de classe domÃ­nio.
 // Substituir Dominio por nome da classe.
 // Substituir Tipo.
 
 class Dominio {
     private:
         Tipo valor;                      // Atributo para armazenar valor.
-        void validar(Tipo);              // Método para validar valor.
+        void validar(Tipo);              // MÃ©todo para validar valor.
     public:
-        void setValor(Tipo);             // Método para atribuir valor.
-        Tipo getValor() const;           // Método para recuperar valor.
+        void setValor(Tipo);             // MÃ©todo para atribuir valor.
+        Tipo getValor() const;           // MÃ©todo para recuperar valor.
 };
 
 inline Tipo Dominio::getValor() const{
@@ -39,4 +39,14 @@ inline string Cidade::getValor() const{
     return valor;
 }
 
-class Codigo
+class Titulo {
+    private:
+        string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+
+inline string Titulo::getValor() const{
+    return valor;
+}
