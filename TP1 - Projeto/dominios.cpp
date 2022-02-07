@@ -7,9 +7,62 @@ using  namespace std;
 // --------------------------------------------------------------------------
 // Implementações de métodos de classe domínio.
 // --------------------------------------------------------------------------
-//Data:
-//Matricula: 202021749
+// Matricula: 202006420
+// Gustavo Pierre Starling
+
+// Cidade:
+void Data::validar(string valor){
+    string cidades_validas[15] = {"Hong Kong", "Bangkok", "Macau", "Singapura", "Londres", "Paris", "Dubai",
+    "Delhi", "Istambul", "Kuala Lumpur", "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
+    bool valido = false;
+    //Confere se valor está no array de cidades_validas
+    for(int i=0; i < 15; i++){
+        if (valor == cidades_validas){
+            valido = true;
+        }
+    //Confere se é válido
+    if(valido == false){
+        throw invalid_argument("Argumento invalido.");
+    }
+
+
+// --------------------------------------------------------------------------
+// Matricula: 202006420
+// Gustavo Pierre Starling
+
+// Codigo:
+
+
+
+// --------------------------------------------------------------------------
+// Matricula: 202006420
+// Gustavo Pierre Starling
+
+// Horario:
+
+
+
+// --------------------------------------------------------------------------
+// Matricula: 202006420
+// Gustavo Pierre Starling
+
+// Senha:
+
+
+
+// --------------------------------------------------------------------------
+// Matricula: 202006420
+// Gustavo Pierre Starling
+
+// Nome:
+
+
+
+// --------------------------------------------------------------------------
+// Matricula: 202021749
 // Felipe Dantas Borges
+
+// Data:
 
 void Data::validar(string valor){
     char valor[] = "13-Apr-2002";
@@ -43,9 +96,10 @@ void Data::setValor(string valor) {
 
 
 // --------------------------------------------------------------------------
-//Endereco:
 //Matricula: 202021749
 // Felipe Dantas Borges
+
+//Endereco:
 
 void Endereco::validar(string valor){
     int len = valor.size();
@@ -86,10 +140,13 @@ void Endereco::setValor(string valor) {
     validar(valor);
     this->valor = valor;
 }
+
+
 // --------------------------------------------------------------------------
-//Titulo:
 //Matricula: 202021749
 // Felipe Dantas Borges
+
+//Titulo:
 
 void Titulo::validar(string valor){
     int len = valor.size();

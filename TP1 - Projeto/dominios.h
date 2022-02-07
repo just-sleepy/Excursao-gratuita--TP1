@@ -23,11 +23,11 @@ inline Tipo Dominio::getValor() const{
     return valor;
 }
 
------------------------------------------------------------------------ */
+//----------------------------------------------------------------------- */
+// Matricula: 202006420
+// Gustavo Pierre Starling
 class Cidade {
     private:
-        static const string cidades_validas[15] = {"Hong Kong", "Bangkok", "Macau", "Singapura", "Londres", "Paris", "Dubai", "Delhi",
-        "Istambul", "Kuala Lumpur", "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
         const string valor;
         void validar(string);
     public:
@@ -39,16 +39,85 @@ inline string Cidade::getValor() const{
     return valor;
 }
 
+
 //----------------------------------------------------------------------- */
-//Matricula: 202021749
+// Matricula: 202006420
+// Gustavo Pierre Starling
+class Codigo {
+    private:
+        const string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Codigo::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006420
+// Gustavo Pierre Starling
+class Horario {
+    private:
+        const string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Horario::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006420
+// Gustavo Pierre Starling
+class Senha {
+    private:
+        const string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Senha::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006420
+// Gustavo Pierre Starling
+class Nome {
+    private:
+        const string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Nome::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202021749
 // Felipe Dantas Borges
 class Data {
     private:
-        string valor;                      // Atributo para armazenar valor.
-        void validar(string);              // Método para validar valor.
+        string valor;
+        void validar(string);
     public:
-        void setValor(string);             // Método para atribuir valor.
-        string getValor() const;           // Método para recuperar valor.
+        void setValor(string);
+        string getValor() const;
 };
 
 inline string Endereco::getValor() const{
@@ -57,15 +126,15 @@ inline string Endereco::getValor() const{
 
 
 //----------------------------------------------------------------------- */
-//Matricula: 202021749
+// Matricula: 202021749
 // Felipe Dantas Borges
 class Endereco {
     private:
-        string valor;                      // Atributo para armazenar valor.
-        void validar(string);              // Método para validar valor.
+        string valor;
+        void validar(string);
     public:
-        void setValor(string);             // Método para atribuir valor.
-        string getValor() const;           // Método para recuperar valor.
+        void setValor(string);
+        string getValor() const;
 };
 
 inline string Endereco::getValor() const{
@@ -74,7 +143,7 @@ inline string Endereco::getValor() const{
 
 
 //----------------------------------------------------------------------- */
-//Matricula: 202021749
+// Matricula: 202021749
 // Felipe Dantas Borges
 class Titulo {
     private:
