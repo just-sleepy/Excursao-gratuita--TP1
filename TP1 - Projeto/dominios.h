@@ -39,6 +39,43 @@ inline string Cidade::getValor() const{
     return valor;
 }
 
+//----------------------------------------------------------------------- */
+//Matricula: 202021749
+// Felipe Dantas Borges
+class Data {
+    private:
+        string valor;                      // Atributo para armazenar valor.
+        void validar(string);              // Método para validar valor.
+    public:
+        void setValor(string);             // Método para atribuir valor.
+        string getValor() const;           // Método para recuperar valor.
+};
+
+inline string Endereco::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+//Matricula: 202021749
+// Felipe Dantas Borges
+class Endereco {
+    private:
+        string valor;                      // Atributo para armazenar valor.
+        void validar(string);              // Método para validar valor.
+    public:
+        void setValor(string);             // Método para atribuir valor.
+        string getValor() const;           // Método para recuperar valor.
+};
+
+inline string Endereco::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+//Matricula: 202021749
+// Felipe Dantas Borges
 class Titulo {
     private:
         string valor;
@@ -50,3 +87,5 @@ class Titulo {
 inline string Titulo::getValor() const{
     return valor;
 }
+
+
