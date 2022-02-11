@@ -237,7 +237,7 @@ void Data::setValor(string valor) {
 
 
 // --------------------------------------------------------------------------
-//Matricula: 202021749
+// Matricula: 202021749
 // Felipe Dantas Borges
 
 //Endereco:
@@ -276,6 +276,7 @@ void Endereco::validar(string valor){
     else if (valido == 0){
         throw invalid_argument("Argumento invalido.");
     }
+}
 
 void Endereco::setValor(string valor) {
     validar(valor);
@@ -284,7 +285,7 @@ void Endereco::setValor(string valor) {
 
 
 // --------------------------------------------------------------------------
-//Matricula: 202021749
+// Matricula: 202021749
 // Felipe Dantas Borges
 
 //Titulo:
@@ -332,3 +333,131 @@ void Titulo::setValor(string valor) {
     this->valor = valor;
 }
 
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+
+//Idioma:
+
+void Idioma::validar(string valor){
+    int i;
+    bool found = false;
+
+    for(i=0;i<10;i++){
+        string idiomas_validos[10] = {"Ingles","Chines Mandarim","Hindi","Espanhol","Frances","Arabe","Bengali","Russo","Portugues","Indonesio"};
+        if(idiomas_validos[i]==valor){
+            found = true;
+        }
+    }
+    if(found==false){
+        throw invalid_argument("Argumento invalido.");
+    }
+}
+
+void Idioma::setValor(string valor) {
+    validar(valor);
+    this->valor = valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+
+//Nota:
+
+void Nota::validar(int valor){
+    int i;
+    bool found = false;
+
+    for(i=0;i<6;i++){
+        int notas_validas[6] = {0,1,2,3,4,5};
+        if(notas_validas[i] == valor){
+            found = true;
+        }
+    }
+    if(found==false){
+        throw invalid_argument("Argumento invalido.");
+    }
+}
+
+void Nota::setValor(string valor) {
+    validar(valor);
+    this->valor = valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+
+//Duracao:
+
+void Duracao::validar(int valor){
+     int i;
+    bool found = false;
+
+    for(i=0;i<5;i++){
+        int duracao_validas[5] = {30,60,90,120,180};
+        if(duracao_validas[i] == valor){
+            found = true;
+        }
+    }
+    if(found==false){
+        throw invalid_argument("Argumento invalido.");
+    }
+}
+
+void Duracao::setValor(string valor) {
+    validar(valor);
+    this->valor = valor;
+}
+
+
+//----------------------------------------------------------------------- */
+//Matricula: 202006448
+// Rafael Hamú Campos
+
+//Descricao:
+
+void Descricao::validar(string valor){
+    int len = valor.size();
+    int ponto, espaco, valido = 1;
+    string p1("."),p2(" ");
+
+    for (int i = 0; valor[i] != '\0'; i++){
+        string c;
+        c = valor[i];
+        if (bool(c == p1) == 1){
+            ++ ponto;
+            espaco = 0;  //zera a contagem de espacos
+            if (ponto == 2){
+                valido = 0;
+            }
+        }
+        else if(bool(c == p2) == 1){
+            ++ espaco ;
+            ponto = 0;//zera a contagem de pontos
+            if (espaco == 2){
+                valido = 0;
+            }
+        }
+        else{
+            ponto = 0;
+            espaco = 0;
+        }
+    }
+
+    if((len <= 0 ) || (len >= 30)){
+        throw invalid_argument("Argumento invalido.");
+    }
+    else if (valido == 0){
+        throw invalid_argument("Argumento invalido.");
+    }
+}
+
+void Descricao::setValor(string valor) {
+    validar(valor);
+    this->valor = valor;
+}

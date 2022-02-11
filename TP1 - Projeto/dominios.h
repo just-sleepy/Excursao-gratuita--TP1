@@ -152,9 +152,76 @@ class Titulo {
     public:
         void setValor(string);
         string getValor() const;
+};
 
 inline string Titulo::getValor() const{
     return valor;
 }
 
 
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+class Idioma {
+    private:
+        string valor;
+        void validar(string valor);
+    public:
+        void setValor(char);
+        string getValor() const;
+};
+
+inline string Idioma::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+class Nota {
+    private:
+        const int valor;
+        void validar(int);
+    public:
+        void setValor(int);
+        int getValor() const;
+};
+
+inline int Nota::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+class Duracao {
+    private:
+        const int valor;
+        void validar(int);
+    public:
+        void setValor(int);
+        int getValor() const;
+};
+
+inline int Duracao::getValor() const{
+    return valor;
+}
+
+
+//----------------------------------------------------------------------- */
+// Matricula: 202006448
+// Rafael Hamú Campos
+class Descricao {
+    private:
+        string valor;
+        void validar(string);
+    public:
+        void setValor(string);
+        string getValor() const;
+};
+
+inline string Descricao::getValor() const{
+    return valor;
+}
