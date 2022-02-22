@@ -362,43 +362,41 @@ int TUSenha::run(){
 // Matricula: 202006420
 // Gustavo Pierre Starling
 
-// Nome:
+// ENTIDADE Sessao:
 
-void TUNome::setUp(){
-    nome = new Nome();
+void TUSessao::setUp(){
+    sessao = new Sessao();
     estado = SUCESSO;
 }
 
-void TUNome::tearDown(){
-    delete nome;
+void TUSessao::tearDown(){
+    delete sessao;
 }
 
-void TUNome::testarCenarioSucesso(){
+void TUSessao::testarCenarioSucesso(){
+    Codigo codigo;
+    Data data;
+    Horario horario;
+    Idioma idioma;
+
     try{
-        nome->setValor(VALOR_VALIDO);
-        if (nome->getValor() != VALOR_VALIDO)
+        codigo.setValor(VALOR_VALIDO_CODIGO);
+        data.setValor(VALOR_VALIDO_DATA);
+        horario.setValor(VALOR_VALIDO_HORARIO);
+        idioma.setValor(VALOR_VALIDO_IDIOMA);
+
+        sessao->setCodigo(codigo);
+        sessao->setTitulo(data);
+        sessao->setCodigo(horario);
+        sessao->setCodigo(idioma);
+
+
+        if (sessao->getCodigo().getValor() != VALOR_VALIDO_CODIGO && sessao->getData().getValor() != VALOR_VALIDO_DATA &&
+            sessao->getCodigo().getValor() != VALOR_VALIDO_HORARIO && sessao->getCodigo().getValor() != VALOR_VALIDO_IDIOMA)
             estado = FALHA;
     }
+
     catch(invalid_argument &excecao){
         estado = FALHA;
     }
-}
-
-void TUNome::testarCenarioFalha(){
-    try{
-        nome->setValor(VALOR_INVALIDO);
-        estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
-        if (nome->getValor() == VALOR_INVALIDO)
-            estado = FALHA;
-    }
-}
-
-int TUNome::run(){
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
-    return estado;
 }
