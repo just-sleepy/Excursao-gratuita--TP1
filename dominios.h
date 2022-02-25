@@ -5,26 +5,11 @@
 
 using namespace std;
 
-/* -----------------------------------------------------------------------
-// Estrutura de código para declaração de classe domínio.
-// Substituir Dominio por nome da classe.
-// Substituir Tipo.
-class Dominio {
-    private:
-        Tipo valor;                      // Atributo para armazenar valor.
-        void validar(Tipo);              // Método para validar valor.
-    public:
-        void setValor(Tipo);             // Método para atribuir valor.
-        Tipo getValor() const;           // Método para recuperar valor.
-};
-inline Tipo Dominio::getValor() const{
-    return valor;
-}
 //----------------------------------------------------------------------- */
 // Matricula: 202006420
 // Gustavo Pierre Starling
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de cidade.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de cidade.
 ///
 /// Regras de formato:
 ///
@@ -63,7 +48,7 @@ inline string Cidade::getValor() const{
 // Matricula: 202006420
 // Gustavo Pierre Starling
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de codigo.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de codigo.
 ///
 /// Regras de formato:
 ///
@@ -101,7 +86,7 @@ inline string Codigo::getValor() const{
 // Matricula: 202006420
 // Gustavo Pierre Starling
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de horario.
+/// @brief Padr&atilde;o para representa&ccedil;&atilde;o de horario.
 ///
 /// Regras de formato:
 ///
@@ -140,7 +125,7 @@ inline string Horario::getValor() const{
 // Matricula: 202006420
 // Gustavo Pierre Starling
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de senha.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de senha.
 ///
 /// Regras de formato:
 ///
@@ -179,7 +164,7 @@ inline string Senha::getValor() const{
 // Matricula: 202006420
 // Gustavo Pierre Starling
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de nome.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de nome.
 ///
 /// Regras de formato:
 ///
@@ -217,18 +202,19 @@ inline string Nome::getValor() const{
 //----------------------------------------------------------------------- */
 //Matricula: 202021749
 // Felipe Dantas Borges
+
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de email.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de email.
 ///
 /// Regras de formato:
 ///
-/// - C&oacute;digo &eacute; v&aacute;lido caso siga o formato de parte-local@dominio.
+/// - C&oacute;digo &eacute; v&aacute;lido caso contenha 5 a 20 caract&eacute;res e siga as regras adequadas em rela&ccedil;&atilde;o ao ponto e ao espa&ccedil;o em branco.
 ///
 
 class Email {
     private:
         string valor;                      // Atributo para armazenar valor.
-        void validar(string);              // Método para validar valor.
+        void validar(string);              // MÃ©todo para validar valor.
     public:
         ///
 /// Armazena email.
@@ -240,14 +226,14 @@ class Email {
 /// - Retorna true  caso email tenha sido armazenado.
 /// - Retorna false caso email n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
 ///
-        void setValor(string);             // Método para atribuir valor.
+        void setValor(string);             // MÃ©todo para atribuir valor.
 
  ///
 /// Retorna email.
 ///
 /// @return email
 ///
-        string getValor() const;           // Método para recuperar valor.
+        string getValor() const;           // MÃ©todo para recuperar valor.
 };
 
 inline string Email::getValor() const{
@@ -258,7 +244,7 @@ inline string Email::getValor() const{
 //Matricula: 202021749
 // Felipe Dantas Borges
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de data.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de data.
 ///
 /// Regras de formato:
 ///
@@ -268,7 +254,7 @@ inline string Email::getValor() const{
 class Data {
     private:
         string valor;                      // Atributo para armazenar valor.
-        void validar(string);              // Método para validar valor.
+        void validar(string);              // MÃ©todo para validar valor.
     public:
         /// Armazena data.
 ///
@@ -279,14 +265,14 @@ class Data {
 /// - Retorna true  caso data tenha sido armazenado.
 /// - Retorna false caso data n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
 
-        void setValor(string);             // Método para atribuir valor.
+        void setValor(string);             // MÃ©todo para atribuir valor.
 
 ///
 /// Retorna data.
 ///
 /// @return data
 ///
-        string getValor() const;           // Método para recuperar valor.
+        string getValor() const;           // MÃ©todo para recuperar valor.
 };
 
 inline string Data::getValor() const{
@@ -298,7 +284,7 @@ inline string Data::getValor() const{
 //Matricula: 202021749
 // Felipe Dantas Borges
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de endereço.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de endereÃ§o.
 ///
 /// Regras de formato:
 ///
@@ -307,25 +293,25 @@ inline string Data::getValor() const{
 class Endereco {
     private:
         string valor;                      // Atributo para armazenar valor.
-        void validar(string);              // Método para validar valor.
+        void validar(string);              // MÃ©todo para validar valor.
     public:
-        /// Armazena endereço.
+        /// Armazena endereÃ§o.
 ///
-/// @param valor endereço.
+/// @param valor endereÃ§o.
 ///
 /// @return
 ///
-/// - Retorna true  caso endereço tenha sido armazenado.
-/// - Retorna false caso endereço n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+/// - Retorna true  caso endereÃ§o tenha sido armazenado.
+/// - Retorna false caso endereÃ§o n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
 
-        void setValor(string);             // Método para atribuir valor.
+        void setValor(string);             // MÃ©todo para atribuir valor.
 
 ///
-/// Retorna endereço.
+/// Retorna endereÃ§o.
 ///
-/// @return endereço
+/// @return endereÃ§o
 ///
-        string getValor() const;           // Método para recuperar valor.
+        string getValor() const;           // MÃ©todo para recuperar valor.
 };
 
 inline string Endereco::getValor() const{
@@ -337,7 +323,7 @@ inline string Endereco::getValor() const{
 //Matricula: 202021749
 // Felipe Dantas Borges
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de t&iacute;tulo.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de t&iacute;tulo.
 ///
 /// Regras de formato:
 ///
@@ -373,9 +359,9 @@ inline string Titulo::getValor() const{
 }
 //----------------------------------------------------------------------- */
 // Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de idioma.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de idioma.
 ///
 /// Regras de formato:
 ///
@@ -410,9 +396,9 @@ inline string Idioma::getValor() const{
 }
 //----------------------------------------------------------------------- */
 // Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de nota.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de nota.
 ///
 /// Regras de formato:
 ///
@@ -434,7 +420,7 @@ class Nota {
 /// - Retorna false caso nota n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
 ///
         void setValor(int);
-        /// Retorna nota.
+/// Retorna nota.
 ///
 /// @return nota
 ///
@@ -445,9 +431,9 @@ inline int Nota::getValor() const{
 }
 //----------------------------------------------------------------------- */
 // Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de duracao.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de duracao.
 ///
 /// Regras de formato:
 ///
@@ -470,7 +456,7 @@ class Duracao {
 /// - Retorna false caso duracao n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
 ///
         void setValor(int);
-        /// Retorna duracao.
+/// Retorna duracao.
 ///
 /// @return duracao
 ///
@@ -481,9 +467,9 @@ inline int Duracao::getValor() const{
 }
 //----------------------------------------------------------------------- */
 // Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 ///
-/// Padr&atilde;o para representa&ccedil;&atilde;o de descricao.
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de descri&ccedil;&atilde;o.
 ///
 /// Regras de formato:
 ///
@@ -494,7 +480,21 @@ class Descricao {
         string valor;
         void validar(string);
     public:
+/// Armazena descri&ccedil;&atilde;o.
+///
+/// @param valor descri&ccedil;&atilde;o.
+///
+/// @return
+///
+/// - Retorna true  caso descri&ccedil;&atilde;o tenha sido armazenado.
+/// - Retorna false caso descri&ccedil;&atilde;o n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
         void setValor(string);
+
+/// Retorna descri&ccedil;&atilde;o.
+///
+/// @return descri&ccedil;&atilde;o.
+///
         string getValor() const;
 };
 inline string Descricao::getValor() const{
