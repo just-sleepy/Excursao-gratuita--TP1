@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1645736010 source:c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\dominios.cpp
+	"dominios.h"
+	<stdio.h>
+	<string.h>
+	<iostream>
+
+1645735890 c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\dominios.h
+	<stdexcept>
+
+1645588331 source:c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\entidades.cpp
+	"entidades.h"
+
+1645665984 c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\entidades.h
+	"dominios.h"
+	<string>
+
+1645741614 source:c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\main.cpp
+	<iostream>
+	"testes.h"
+
+1645741676 c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\testes.h
+	"entidades.h"
+
+1645734410 source:c:\users\usuario\desktop\unb\tp1\excursao-gratuita--tp1-05ea24bb5432d924c11d6df8d0c2bc80dc969fd1\testes.cpp
+	"testes.h"
+
+1645745130 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\dominios.cpp
+	"dominios.h"
+	<stdio.h>
+	<string.h>
+	<iostream>
+
+1645745130 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\dominios.h
+	<stdexcept>
+
+1645745130 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\entidades.cpp
+	"entidades.h"
+
+1645764987 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\entidades.h
+	"dominios.h"
+	<string>
+
+1650388875 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\main.cpp
+	<string.h>
+	<stdexcept>
+	<iostream>
+	"curses.h"
+	"dominios.h"
+	"interface.h"
+	"controladorasapresentacao.h"
+	"controladorasservico.h"
+
+1645745130 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\testes.h
+	"entidades.h"
+
+1645745130 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\testes.cpp
+	"testes.h"
+
+1650386052 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\controladorasapresentacao.cpp
+	"controladorasapresentacao.h"
+
+1650407265 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\controladorasapresentacao.h
+	<string.h>
+	<iostream>
+	"curses.h"
+	"dominios.h"
+	"entidades.h"
+	"interface.h"
+	<list>
+
+1650380733 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+	<stdbool.h>
+
+1650388855 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\interface.h
+	"dominios.h"
+	"entidades.h"
+	<list>
+
+1650388212 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\controladorasservico.h
+	"dominios.h"
+	"entidades.h"
+	"interface.h"
+	<list>
+	<iostream>
+	<string>
+	<stdio.h>
+	"sqlite3.h"
+
+1637519748 c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\sqlite3.h
+	<stdarg.h>
+
+1650404614 source:c:\users\belph\onedrive - unb.br\햞ea de trabalho\tp1\tp1 projeto super att\controladorasservico.cpp
+	"controladorasservico.h"
+
